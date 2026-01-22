@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   const loaderText = document.querySelector(".loader-text");
   const loader = document.querySelector(".loader");
 
-  gsap.set(progressCircle, {drawSVG: "0% 0%"});
+  gsap.set(progressCircle, {opacity: 1, visibility: "visible", drawSVG: "0% 0%"});
 
   gsap.to(progressCircle, {
     duration: 1,

@@ -587,6 +587,8 @@ footer p {
 }
 
 .progress-circle {
+  opacity: 0;
+  visibility: hidden;
   stroke: var(--accent-colour);
   stroke-linecap: round;
 }

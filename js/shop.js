@@ -104,8 +104,19 @@ function displayProducts(products, query = "") {
 
   productList.innerHTML = productHTML;
 
-  const imageHolder = document.querySelector(".image-holder");
-  gsap.fromTo(imageHolder, {scale: 1}, {scale: 1.05, duration: 0.2, yoyo: true, repeat: 1, ease: "power1.inOut"});
+  const imageHolder = document.querySelectorAll(".image-holder");
+
+  
+  imageHolder.forEach(holder =>{
+    gsap.from(holder,{
+      y:20,
+      opacity:0,
+      duration:0.5,
+      stagger:0.1,
+      ease:"power2.out"
+    })
+  })
+  console.log(imageHolder);
 
   setupAddToCartButtons();
   setupFavouriteButtons();

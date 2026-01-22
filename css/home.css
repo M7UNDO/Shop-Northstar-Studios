@@ -270,8 +270,8 @@ section p {
   line-height: 1.6rem;
 }
 
-#featured-products-section .add-to-cart-btn,
-.featured-products-grid .add-to-cart-btn {
+
+.add-to-cart-btn {
   opacity: 0;
   pointer-events: none;
   position: absolute;
@@ -287,7 +287,9 @@ section p {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  transition: opacity 200ms ease, transform 200ms ease;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
   z-index: 5;
 }
 
@@ -359,7 +361,9 @@ section p {
   width: 4rem;
   height: 4rem;
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.3s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.3s ease;
   opacity: 0.8;
   display: flex;
   align-items: center;
@@ -367,20 +371,18 @@ section p {
   z-index: 5;
 }
 
-.scroll-btn.left{
+.scroll-btn.left {
   left: 2rem;
-  
 }
 
-.scroll-btn.right{
+.scroll-btn.right {
   right: 2rem;
-
 }
 
 .scroll-btn svg {
   height: 90%;
   width: 90%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   fill: white;
 }
 .scroll-btn:hover {
@@ -395,7 +397,9 @@ section p {
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.325);
   overflow: hidden;
   position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,7 +448,9 @@ section p {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  transition: opacity 200ms ease, transform 200ms ease;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
   z-index: 5;
 }
 
@@ -545,6 +551,10 @@ section p {
     height: 25rem;
   }
 
+  .add-to-cart-btn, .scroll-container .add-to-cart-btn {
+    display: none;
+  }
+
   #featured-products-section {
     padding: 5rem 2rem;
   }
@@ -598,7 +608,6 @@ section p {
 }
 
 @media (max-width: 620px) {
-
   .scroll-container .product-title {
     height: 5rem;
     width: 90%;
@@ -614,17 +623,15 @@ section p {
   }
 }
 
-@media (max-width: 600px){
-  .category-box{
+@media (max-width: 600px) {
+  .category-box {
     height: 20rem;
     width: 20rem;
   }
-
 }
 
 @media (max-width: 480px) {
-
-  .category-box{
+  .category-box {
     height: 17rem;
     width: 17rem;
   }
