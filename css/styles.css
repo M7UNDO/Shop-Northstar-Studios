@@ -100,6 +100,25 @@ header {
   width: 50%;
 }
 
+.nav-logo a{
+  height: 100%;
+  width: 100%;
+
+}
+
+#logo{
+  fill: var(--typography-colour);
+  height: 100%;
+  width: auto;
+  transition: all 0.2s ease;
+}
+
+#logo:hover{
+  fill: var(--accent-colour);
+  transform: scale(1.2);
+
+}
+
 .nav-logo a {
   font: var(--secondary-font);
   color: var(--typography-colour);
@@ -492,6 +511,7 @@ footer p {
   align-items: center;
   gap: 1rem;
   font: var(--secondary-font);
+  font-size: 1.5rem;
   text-transform: capitalize;
   transition: color 0.3s ease;
   /*background-color: red;*/
