@@ -105,7 +105,7 @@ function getLoginFormErrors(email, password) {
 
 function saveUser(firstname, email, password) {
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
   let users = JSON.parse(localStorage.getItem("users")) || [];
 
 
@@ -132,7 +132,7 @@ function saveUser(firstname, email, password) {
 
 function verifyUser(email, password) {
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
 
   const emailValue = (email || "").trim();

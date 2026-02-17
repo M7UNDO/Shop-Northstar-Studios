@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const EXCHANGE_RATE = 17;
   const favouritesData = products.filter((p) => favourites.includes(p.id));
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
   productList.innerHTML = favouritesData
     .map((product) => {

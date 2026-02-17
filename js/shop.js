@@ -70,7 +70,7 @@ function displayProducts(products, query = "") {
   productList.classList.remove("loading");
 
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
   const productHTML = products
     .map(

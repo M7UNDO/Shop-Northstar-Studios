@@ -19,7 +19,7 @@ function showLoginPanel() {
 
   document.getElementById("login-panel-btn").addEventListener("click", () => {
     const isGithub = window.location.hostname.includes("github.io");
-    const repoName = isGithub ? "/M7UNDO" : "";
+    const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
     window.location.href = `${repoName}/login.html`;
   });
 

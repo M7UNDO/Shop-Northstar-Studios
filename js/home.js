@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayProducts(products, container) {
     const isGithub = window.location.hostname.includes("github.io");
-    const repoName = isGithub ? "/M7UNDO" : "";
+    const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
     container.innerHTML = products
       .map(

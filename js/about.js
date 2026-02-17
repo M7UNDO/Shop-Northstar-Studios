@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
   const productGallery = document.getElementById("about-products");
   const EXCHANGE_RATE = 17;

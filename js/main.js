@@ -48,7 +48,7 @@ function loadNav() {
   if (!navContainer) return;
 
   const isGithub = window.location.hostname.includes("github.io");
-  const repoName = isGithub ? "/M7UNDO" : "";
+  const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
   const navHTML = `
       <nav class="nav-container">
@@ -277,7 +277,7 @@ function loadNav() {
       e.preventDefault();
       localStorage.removeItem("activeUser");
       const isGithub = window.location.hostname.includes("github.io");
-      const repoName = isGithub ? "/M7UNDO" : "";
+      const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
 
       window.location.href = `${repoName}/index.html`;
     });
@@ -330,7 +330,7 @@ function loadSearch() {
       displayProducts(filteredProducts, query);
     } else {
       const isGithub = window.location.hostname.includes("github.io");
-      const repoName = isGithub ? "/M7UNDO" : "";
+      const repoName = isGithub ? "/Shop-Northstar-Studios" : "";
       window.location.href = `${repoName}/shop/shop.html?search=${encodeURIComponent(query)}`;
     }
   });
